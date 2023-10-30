@@ -1,0 +1,42 @@
+// Variables
+$couleur-principale: #3498db;
+$taille-police: 16px;
+
+// Styles de base
+body {
+  font-family: Arial, sans-serif;
+  font-size: $taille-police;
+  background-color: #f0f0f0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+// Styles pour un bouton
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: $couleur-principale;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: darken($couleur-principale, 10%);
+  }
+}
+
+//Ce squelette de code SCSS comprend les éléments suivants :
+//Déclaration de variables (par exemple, $couleur-principale et $taille-police) pour stocker des valeurs réutilisables dans votre feuille de style.
+
+//Styles pour une classe .container qui crée une largeur maximale et un centrage automatique pour le contenu.
+
+//Utilisation de la fonction Sass darken() pour assombrir la couleur principale du bouton au survol.
+
+//Pour utiliser ce code, vous devrez compiler le fichier SCSS en CSS. Vous pouvez utiliser des outils comme Sass (Ruby) ou des préprocesseurs SCSS intégrés dans des frameworks CSS comme Node-sass ou Dart Sass. Assurez-vous d'inclure le fichier CSS généré dans votre page HTML pour appliquer ces styles à votre site web.
